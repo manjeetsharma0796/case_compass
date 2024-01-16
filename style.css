@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: url("/law.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.85;
+    backdrop-filter: blur(18px);
+    filter: brightness(88%);
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background-color: seagreen;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.logo{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 36px;
+}
+
+ a{
+    font-size: 1.15em;
+    text-decoration: none;
+    /* border: 1px solid red; */
+    margin-left: 1.5em;
+    padding: 0.5em;
+    position: relative;
+    color: rgb(255, 255, 255);
+    letter-spacing: 0.1em;
+    padding: 0 10px;
+}
+
+a:after {
+    content: "";
+    position: absolute;
+    background-color: rgb(255, 242, 0);
+    height: 4px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.4s;
+
+}
+
+a:hover:after {
+    width: 100%;
+}
+
+.page{
+    height: auto;
+    width: 50%;
+    padding-top: 8em;
+    margin: auto;
+    /* border: 1px solid red; */
+}
+
+.title {
+    font-size: 2.3em;
+    text-decoration: underline;
+    /* border: 1px solid red; */
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+
+.content {
+    font-size: 1.2em;
+    padding-left: 3em;
+}
