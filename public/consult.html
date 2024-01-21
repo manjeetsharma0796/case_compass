@@ -11,6 +11,20 @@
   <style>
     body {
       font-family: 'Arial', sans-serif;
+      margin: 0; /* Remove default body margin */
+    }
+
+    .header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      padding: 20px 100px;
+      background-color: seagreen;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 1000; /* Add z-index to ensure it's above other elements */
     }
 
     .chat-container {
@@ -23,6 +37,7 @@
       overflow-y: auto;
       height: 300px;
       /* Set a fixed height for the chat container */
+      padding-top: 80px; /* Adjust padding-top to create space below the fixed header */
     }
 
     .chat-box {
@@ -57,11 +72,14 @@
 
     /* Placeholder chat input styles */
     .chat-input {
-      width: 100%;
+      width: calc(100% - 40px); /* Adjusted width */
       padding: 8px;
       border: none;
       border-radius: 5px;
       margin-top: 10px;
+      position: fixed;
+      bottom: 20px;
+      left: 20px;
     }
 
     /* Filler messages with icons */
@@ -88,6 +106,18 @@
 </head>
 
 <body>
+
+  <header class="header">
+    <a href="#" class="logo">Case Compass</a>
+
+    <nav class="navbar">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="consult.html">Consult</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+  
   <section class="chat-container">
     <div class="chat-box ai-message">
       <p>Hi there! How can I assist you today with your legal troubles?</p>
