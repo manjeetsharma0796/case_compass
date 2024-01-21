@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Law</title>
+  <!-- Add your link to the chat icon image -->
+  <link rel="icon" type="image/png" href="chat-icon.png">
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+    }
+
+    .chat-container {
+      max-width: 800px;
+      margin: auto;
+      padding: 20px;
+      background-color: #f8f8f8;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      overflow-y: auto;
+      height: 300px;
+      /* Set a fixed height for the chat container */
+    }
+
+    .chat-box {
+      background-color: #ffffff;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+    }
+
+    .user-message {
+      color: #333;
+    }
+
+    .ai-message {
+      color: #0066cc;
+    }
+
+    .chat-icon {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      cursor: pointer;
+    }
+
+    .chat-icon img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+    }
+
+    /* Placeholder chat input styles */
+    .chat-input {
+      width: 100%;
+      padding: 8px;
+      border: none;
+      border-radius: 5px;
+      margin-top: 10px;
+    }
+
+    /* Filler messages with icons */
+    .filler-message {
+      display: flex;
+      align-items: center;
+    }
+
+    .icon {
+      margin-right: 10px;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background-color: #0066cc;
+    }
+
+    .filler-message p {
+      margin: 0;
+      padding: 10px;
+      background-color: #ffffff;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+
+<body>
+  <section class="chat-container">
+    <div class="chat-box ai-message">
+      <p>Hi there! How can I assist you today with your legal troubles?</p>
+    </div>
+
+    <!-- Filler messages with icons -->
+    <div class="filler-message">
+      <div class="icon"></div>
+      <p>This is a filler message from the user</p>
+    </div>
+
+    <div class="filler-message">
+      <div class="icon"></div>
+      <p>Stating their legal necessities and details</p>
+    </div>
+
+    <!-- Previous user and AI messages go here -->
+
+  </section>
+
+  <!-- Chat input box -->
+  <input type="text" class="chat-input" placeholder="Type your message...">
+
+  <!-- Chat icon -->
+  <div class="chat-icon">
+    <img src="ai.png" alt="Gemini AP">
+  </div>
+</body>
+
+</html>
