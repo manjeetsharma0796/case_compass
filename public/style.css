@@ -1,88 +1,86 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Times New Roman", monospace;
 }
 
 body {
-    min-height: 100vh;
-    background: url("/law.jpg") no-repeat;
-    background-size: cover;
-    background-position: center;
-    opacity: 0.85;
-    backdrop-filter: blur(18px);
-    filter: brightness(88%);
+  min-height: 100vh;
+  background: url("/law.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.85;
+  backdrop-filter: blur(18px);
+  filter: brightness(88%);
+
 }
 
 .header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 20px 100px;
-    background-color: seagreen;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 100px;
+  background-color: #247f8b;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.logo{
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 36px;
+.logo {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 36px;
 }
 
- a{
-    font-size: 1.15em;
-    text-decoration: none;
-    /* border: 1px solid red; */
-    margin-left: 1.5em;
-    padding: 0.5em;
-    position: relative;
-    color: rgb(255, 255, 255);
-    letter-spacing: 0.1em;
-    padding: 0 10px;
+a {
+  font-size: 1.15em;
+  text-decoration: none;
+  margin-left: 1.5em;
+  padding: 0.5em;
+  position: relative;
+  color: rgb(255, 255, 255);
+  letter-spacing: 0.1em;
+  padding: 0 10px;
 }
 
 a:after {
-    content: "";
-    position: absolute;
-    background-color: rgb(255, 242, 0);
-    height: 4px;
-    width: 0;
-    left: 0;
-    bottom: -10px;
-    transition: 0.4s;
-
+  content: "";
+  position: absolute;
+  background-color: rgb(255, 242, 0);
+  height: 4px;
+  width: 0;
+  left: 0;
+  bottom: -10px;
+  transition: 0.4s;
 }
 
 a:hover:after {
-    width: 100%;
+  width: 100%;
 }
 
-.page{
-    height: 100vh;
-    width: 80%;
-    padding-top: 8em;
-    margin: auto;
-    background-color: rgb(255, 255, 255);
-    padding-left: 4em;
-    padding-right: 4em;
-    /* border: 1px solid red; */
+.page {
+  height: 100vh;
+  width: 80%;
+  padding-top: 8em;
+  margin: auto;
+  background-color: rgb(255, 255, 255);
+  padding-left: 4em;
+  padding-right: 4em;
 }
 
 .title {
-    font-size: 2.3em;
-    text-decoration: underline;
-    /* border: 1px solid red; */
-    margin-bottom: 1em;
-    margin-top: 1em;
+  font-size: 2.3em;
+  text-decoration: none;
+  /* Remove underline */
+  margin-bottom: 1em;
+  margin-top: 1em;
 }
 
 .content {
-    font-size: 1.2em;
-    padding-left: 3em;
+  font-size: 1.2em;
+  padding-left: 3em;
+  color: #2C3E50;
 }
