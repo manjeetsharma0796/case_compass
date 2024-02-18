@@ -13,7 +13,13 @@ const serveHome = (req, res) => {
 const log = (req, res, next) => {
   console.log(req.path);
   next();
-}
+};
+
+const processLegalPrompt = (req, res) => {
+  const { prompt } = req.body;
+  const legalPrompt = `As a lawyer, provide a detailed response to the following legal inquiry: ${prompt}`;
+  promptInput(legalPrompt, res); // Call promptInput with the modified prompt
+};
 
 const createApp = () => {
     // Create a new Express application.
@@ -21,9 +27,9 @@ const createApp = () => {
     app.use(log);
     app.use(bodyParser.json());
     app.get("/", serveHome);
-    app.post('/submit', promptInput);
+    app.post('/submit', processLegalPrompt); // Updated route to use processLegalPrompt
     app.use(express.static("public"));
     return app;
-}
+};
 
-module.exports = {createApp};
+module.exports = { createApp };
