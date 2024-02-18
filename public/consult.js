@@ -4,6 +4,7 @@ sbutton.addEventListener('click', () => {
     // event.preventDefault(); // Prevent default form submission
     const promptEle = document.getElementById('input-prompt');
     const prompt = promptEle.value;
+    document.getElementById('question').innerText = `Q. ${prompt}`;
     promptEle.value= "";
     console.log(prompt);
     fetch('/submit', {
