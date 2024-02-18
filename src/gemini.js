@@ -7,7 +7,6 @@ const {
 const API_KEY = "AIzaSyC_VRIjI7lhSRtd3JDJ73tR-7Do3PlS2Po";
 const MODEL_NAME = "gemini-1.0-pro";
 // Access your API key as an environment variable (see "Set up your API key" above)
-const genAI = new GoogleGenerativeAI(API_KEY);
 
 // ...
 const generationConfig = {
@@ -36,6 +35,7 @@ const safetySettings = [
   },
 ];
 
+const genAI = new GoogleGenerativeAI(API_KEY, generationConfig, safetySettings);
 async function promptInput(req, res) {
   // For text-only input, use the gemini-pro model
   const {prompt} = (req.body);
