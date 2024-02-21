@@ -2,21 +2,16 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 20px;
-  background-color: #70a04a;
-  /* Lighter, muted sap green */
-  color: #f5f5f5;
-  /* Light cream for good contrast */
+  background-color: #404040; /* Dark gray similar to #404040 */
+  color: #f5f5f5; /* Light cream for good contrast */
 }
 
 .container {
   max-width: 1300px;
-
   margin: auto;
   padding: 20px;
-  background-color: #d0e5b5;
-  /* Lighter, warm off-white */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  /* Softer shadow */
+  background-color: #303030; /* Darker shade of gray */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Softer shadow */
   border-radius: 10px;
   overflow: hidden;
   display: grid;
@@ -25,9 +20,7 @@ body {
 }
 
 .suggestion-box {
-  background-color: #90b875;
-  /* Lighter, muted sap green with more contrast */
-
+  background-color: #505050; /* Darker shade of gray with more contrast */
   padding: 15px;
   border-radius: 8px;
 }
@@ -42,8 +35,7 @@ body {
 
 .chat-box,
 .chat-input {
-  background-color: #90b875;
-  /* Light cream for good contrast */
+  background-color: #505050; /* Darker shade of gray */
   padding: 10px;
   margin-bottom: 10px;
   border-radius: 8px;
@@ -54,14 +46,13 @@ body {
   height: 30px;
   border: none;
   margin-top: 10px;
-  /* Text color same as body for consistency */
   font-size: 15px;
   padding-right: 50px;
+  color: #f5f5f5; /* Light cream for good contrast */
 }
 
 .chat-input::placeholder {
-  color: #3b3b3b;
-  /* Light gray for subtle placeholder */
+  color: #808080; /* Dark gray for subtle placeholder */
 }
 
 .chat-input-container {
@@ -89,9 +80,9 @@ body {
 }
 
 #prompt-ans {
-  color: black;
+  color: #404040; /* Dark gray similar to #404040 */
 }
 
 #question {
-  color: black;
+  color: #404040; /* Dark gray similar to #404040 */
 }
