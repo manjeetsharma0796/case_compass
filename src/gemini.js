@@ -38,17 +38,19 @@ const safetySettings = [
 const genAI = new GoogleGenerativeAI(API_KEY, generationConfig, safetySettings);
 async function promptInput(req, res) {
   // For text-only input, use the gemini-pro model
-  const {prompt} = (req.body);
+  const { prompt } = req.body;
   console.log(prompt);
-  const model = genAI.getGenerativeModel({ model: MODEL_NAME});
-  const result = await model.generateContent(prompt);
+  const model = genAI.getGenerativeModel({ model: MODEL_NAME });
+  const result = await model.generateContent(
+    `You are an Indian lawyer, respond to the question by giving legal advice, writing article numbers and suggesting similar case laws:${prompt}`
+  );
   const response = await result.response;
   const text = response.text();
   console.log(text);
-  res.send(JSON.stringify(text))
+  res.send(JSON.stringify(text));
 }
 
-const prompt = "who is jjk k ?"
+const prompt = "who is jjk k ?";
 // promptInput(prompt);
 
-module.exports = {promptInput};
+module.exports = { promptInput };
