@@ -7,7 +7,8 @@
 
 body {
   min-height: 100vh;
-  background: url("/professional_background.jpg") no-repeat; /* Replace "professional_background.jpg" with your desired image */
+  background-color: #707070; /* Grey background color */
+  
   background-size: cover;
   background-position: center;
   opacity: 0.85;
