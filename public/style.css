@@ -76,11 +76,11 @@ a:hover:after {
   text-decoration: none;
   margin-bottom: 1em;
   margin-top: 1em;
-  color: #f5f5f5; /* Light cream for good contrast */
+  color: #ffffff; /* Light cream for good contrast */
 }
 
 .content {
   font-size: 1.2em;
   padding-left: 3em;
-  color: #f5f5f5; /* Light cream for good contrast */
+  color: #ffffff; /* Light cream for good contrast */
 }
