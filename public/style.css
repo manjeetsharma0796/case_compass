@@ -7,13 +7,12 @@
 
 body {
   min-height: 100vh;
-  background: url("/law.jpg") no-repeat;
+  background: url("/professional_background.jpg") no-repeat; /* Replace "professional_background.jpg" with your desired image */
   background-size: cover;
   background-position: center;
   opacity: 0.85;
   backdrop-filter: blur(18px);
   filter: brightness(88%);
-
 }
 
 .header {
@@ -22,7 +21,7 @@ body {
   left: 0;
   width: 100%;
   padding: 20px 100px;
-  background-color: #247f8b;
+  background-color: #404040; /* Dark gray similar to #404040 */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -66,7 +65,7 @@ a:hover:after {
   width: 80%;
   padding-top: 8em;
   margin: auto;
-  background-color: rgb(255, 255, 255);
+  background-color: #404040; /* Dark gray similar to #404040 */
   padding-left: 4em;
   padding-right: 4em;
 }
@@ -74,13 +73,13 @@ a:hover:after {
 .title {
   font-size: 2.3em;
   text-decoration: none;
-  /* Remove underline */
   margin-bottom: 1em;
   margin-top: 1em;
+  color: #f5f5f5; /* Light cream for good contrast */
 }
 
 .content {
   font-size: 1.2em;
   padding-left: 3em;
-  color: #2C3E50;
+  color: #f5f5f5; /* Light cream for good contrast */
 }
