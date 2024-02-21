@@ -44,10 +44,16 @@ async function promptInput(req, res) {
   const result = await model.generateContent(
     `You are an Indian lawyer, respond to the question by giving legal advice, writing article numbers and suggesting similar case laws:${prompt}`
   );
-  const response = await result.response;
-  const text = response.text();
-  console.log(text);
-  res.send(JSON.stringify(text));
+  try {
+    const response = await result.response;
+    const text = response.text();
+    console.log(text);
+    res.send(JSON.stringify(text));
+  } catch (error) {
+    const text =
+      "The Information provided by you is insufficient/ Infringes upon user privacy.";
+    res.send(JSON.stringify(text));
+  }
 }
 
 const prompt = "who is jjk k ?";
