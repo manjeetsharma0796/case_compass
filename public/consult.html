@@ -1,62 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Law</title>
+    <!-- Add your link to the chat icon image -->
+    <link rel="icon" type="image/png" href="chat-icon.png" />
+    <link rel="stylesheet" href="consult.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Law</title>
-  <!-- Add your link to the chat icon image -->
-  <link rel="icon" type="image/png" href="chat-icon.png">
-  <link rel="stylesheet" href="consult.css">
-</head>
-
-<body>
-
-  <div class="container">
-    <div class="suggestion-box">
-      <p>Need legal advice?</p>
-      <p>'A dog bit me, what legal steps can i take against it in India?'</p>
-    </div>
-
-    <div class="suggestion-box">
-      <p>Are you facing legal troubles?</p>
-      <p>'Help, i got in a driving accident! What legal recourse do i have in India.'</p>
-    </div>
-
-    <div class="suggestion-box">
-      <p>Not sure about your legal options?</p>
-      <p>'Tell me a legal opinion whether i should make a will or transfer property in India?'</p>
-    </div>
-
-    <div class="suggestion-box">
-      <p>Have questions about our services?</p>
-      <p>Contact us for more information!</p>
-    </div>
-
-    <div class="chat-container">
-      <div class="chat-box ai-message">
-        <p>Hi there! How can I assist you today with your legal troubles?</p>
+  <body>
+    <div class="container">
+      <div class="suggestion-box">
+        <p>Need legal advice?</p>
+        <p>'A dog bit me, what legal steps can i take against it in India?'</p>
       </div>
 
-      <!-- Previous user and AI messages go here -->
+      <div class="suggestion-box">
+        <p>Are you facing legal troubles?</p>
+        <p>
+          'Help, i got in a driving accident! What legal recourse do i have in
+          India.'
+        </p>
+      </div>
 
+      <div class="suggestion-box">
+        <p>Not sure about your legal options?</p>
+        <p>
+          'Tell me a legal opinion whether i should make a will or transfer
+          property in India?'
+        </p>
+      </div>
+
+      <div class="suggestion-box">
+        <p>Have questions about our services?</p>
+        <p>Contact us for more information!</p>
+      </div>
+
+      <div class="chat-container">
+        <div class="chat-box ai-message">
+          <p>Hi there! How can I assist you today with your legal troubles?</p>
+        </div>
+
+        <!-- Previous user and AI messages go here -->
+      </div>
+
+      <!-- Chat input box -->
+      <div class="chat-input-container">
+        <input
+          type="text"
+          class="chat-input"
+          id="input-prompt"
+          placeholder="Type your message..."
+        />
+        <button type="button" id="inputBttn">>>></button>
+      </div>
+      <div class="chat-container">
+        <p id="question"></p>
+        <p id="prompt-ans"></p>
+      </div>
     </div>
 
-    <!-- Chat input box -->
-    <div class="chat-input-container">
-      <input type="text" class="chat-input" id="input-prompt" placeholder="Type your message...">
-      <button type="button" id="inputBttn"> >>> </button>
-    </div>
-    <div class="chat-container">
-      <p id="question"></p>
-      <p id="prompt-ans"></p>
-    </div>
-           
-  </div>
+    <!-- Chat icon -->
 
-  <!-- Chat icon -->
-
-<script src="consult.js"></script>
-</body>
-
+    <script src="consult.js"></script>
+  </body>
+  <script></script>
 </html>

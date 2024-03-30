@@ -4,7 +4,7 @@ const {
   HarmBlockThreshold,
 } = require("@google/generative-ai");
 
-const API_KEY = "AIzaSyC_VRIjI7lhSRtd3JDJ73tR-7Do3PlS2Po";
+const API_KEY = "AIzaSyCDqAf-nnoCxt7UR6_QNHXeKXPBfTttJPc";
 const MODEL_NAME = "gemini-1.0-pro";
 // Access your API key as an environment variable (see "Set up your API key" above)
 
